@@ -10,30 +10,14 @@
 const projects = [  // This is a single project object.
   // Each key (e.g., 'title') is a string, followed by a colon,
   // and then its value. Commas separate each key-value pair.
-  {
-    // The title of the project. This will be displayed as the main heading of the card.
-    title: "Portfolio Project (This Website!)",
-
-    // A brief description of the project. Explain the technologies used and its purpose.
-    description: "A responsive personal portfolio built from scratch using HTML, CSS, and vanilla JavaScript. Features a dynamic theme switcher and is populated by a JavaScript data structure.",
-
-    // The path to the project's image. The path is relative to the index.html file.
-    imageUrl: "./images/project_4.webp",
-
-    // The URL to the live, deployed version of the project.
-    liveUrl: "https://your-live-site.com", // Replace with your actual deployed URL when ready
-
-    // The URL to the project's source code on a platform like GitHub.
-    codeUrl: "https://github.com/your-username/your-repo-name" // Replace with your actual GitHub repo
-  },
   // A comma is required here to separate this object from the next one in the array.
   // Copy the structure above and fill it with your second project's details.
   {
     title: "4-bit Arithmetic Logic Unit (ALU) Simulator",
     description: "Built a 4-bit ALU in Verilog capable of performing addition, subtraction, bitwise AND, OR, and XOR operations selected via a 3-bit opcode",
     imageUrl: "./images/project_2.webp", // Make sure to add this image to your 'images' folder!
-    liveUrl: "#", // Use "#" if there's no live link yet
-    codeUrl: "https://github.com/your-username/alu-simulator-repo" // Replace with your repo link
+    liveUrl: "https://github.com/ShachiSingh1983/Arithmetic-Logic-Unit/blob/main/Waveforms.png", // Use "#" if there's no live link yet
+    codeUrl: "https://github.com/ShachiSingh1983/Arithmetic-Logic-Unit/blob/main/alu_tb.v" // Replace with your repo link
   },
   // Another comma to separate this object from the next one.
 
@@ -42,17 +26,17 @@ const projects = [  // This is a single project object.
     title: "Traffic Light Controller using Finite State Machine (FSM)",
     description: "Designed a Finite State Machine (FSM)-based traffic light controller in Verilog HDL with timed state transitions for Red,Yellow, and Green signals.",
     imageUrl: "./images/project_1.webp", // Make sure to add this image to your 'images' folder!
-    liveUrl: "#", // Use "#" if there's no live link yet
-    codeUrl: "https://github.com/your-username/traffic-light-repo" // Replace with your repo link
+    liveUrl: "https://github.com/ShachiSingh1983/traffic-light-fsm-verilog/blob/main/Waveforms.png", // Use "#" if there's no live link yet
+    codeUrl: "https://github.com/ShachiSingh1983/traffic-light-fsm-verilog/blob/main/traffic_light_tb.v" // Replace with your repo link
   },
 
   // Copy the structure above and fill it with your second project's details.
   {
-    title: "Circuit Component Reference Tool",
-    description: "A web-based reference tool for common electrical components (resistors, capacitors, inductors) with formulas, color code calculators, and unit conversions.",
-    imageUrl: "./images/project_3.webp", // Make sure to add this image to your 'images' folder!
-    liveUrl: "#", // Use "#" if there's no live link yet
-    codeUrl: "https://github.com/your-username/circuit-reference-tool-repo" // Replace with your repo link
+    title: "Portfolio Project (This Website!)",
+    description: "A responsive personal portfolio built from scratch using HTML, CSS, and vanilla JavaScript. Features a dynamic theme switcher and is populated by a JavaScript data structure.",
+    imageUrl: "./images/project_4.webp", // Make sure to add this image to your 'images' folder!
+    liveUrl: "https://6a1462e32cfcdb2ba0c15997--shachi-portfolio-project.netlify.app/", // Use "#" if there's no live link yet
+    codeUrl: "https://github.com/ShachiSingh1983/personal-portfolio-website" // Replace with your repo link
   }
   // A "trailing comma" after the last object is valid in modern JavaScript
   // and is a good practice as it makes version control diffs cleaner.
