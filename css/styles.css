@@ -222,6 +222,53 @@ header nav ul li a {
 .about-text p:last-child {
   margin-bottom: 0;
 }
+#experience {
+  padding: calc(var(--spacing-unit) * 4) 0;
+  background-color: var(--surface-color);
+}
+
+#experience h2 {
+  text-align: center;
+  margin-bottom: calc(var(--spacing-unit) * 3);
+}
+
+.experience-item {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.experience-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.company {
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
+}
+
+.date {
+  font-size: 0.9rem;
+  color: var(--text-color-light);
+}
+
+.experience-item p {
+  margin: 0;
+  line-height: 1.6;
+}
 
 #skills {
   padding: calc(var(--spacing-unit) * 4) 0;
