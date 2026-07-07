@@ -16,8 +16,8 @@ const projects = [  // This is a single project object.
     title: "4-bit Arithmetic Logic Unit (ALU) Simulator",
     description: "Built a 4-bit ALU in Verilog capable of performing addition, subtraction, bitwise AND, OR, and XOR operations selected via a 3-bit opcode",
     imageUrl: "./images/project_2.webp", // Make sure to add this image to your 'images' folder!
-    liveUrl: "https://github.com/thedragnwarrior/Arithmetic-Logic-Unit/blob/main/Waveforms.png", // Use "#" if there's no live link yet
-    codeUrl: "https://github.com/thedragnwarrior/Arithmetic-Logic-Unit/blob/main/alu_tb.v" // Replace with your repo link
+    liveUrl: "https://github.com/shachi-singh/Arithmetic-Logic-Unit/blob/main/Waveforms.png", // Use "#" if there's no live link yet
+    codeUrl: "https://github.com/shachi-singh/Arithmetic-Logic-Unit/blob/main/alu_tb.v" // Replace with your repo link
   },
   // Another comma to separate this object from the next one.
 
@@ -26,8 +26,8 @@ const projects = [  // This is a single project object.
     title: "Traffic Light Controller using Finite State Machine (FSM)",
     description: "Designed a Finite State Machine (FSM)-based traffic light controller in Verilog HDL with timed state transitions for Red,Yellow, and Green signals.",
     imageUrl: "./images/project_1.webp", // Make sure to add this image to your 'images' folder!
-    liveUrl: "https://github.com/thedragnwarrior/traffic-light-fsm-verilog/blob/main/Waveforms.png", // Use "#" if there's no live link yet
-    codeUrl: "https://github.com/thedragnwarrior/traffic-light-fsm-verilog/blob/main/traffic_light_tb.v" // Replace with your repo link
+    liveUrl: "https://github.com/shachi-singh/traffic-light-fsm-verilog/blob/main/Waveforms.png", // Use "#" if there's no live link yet
+    codeUrl: "https://github.com/shachi-singh/traffic-light-fsm-verilog/blob/main/traffic_light_tb.v" // Replace with your repo link
   },
 
   // Copy the structure above and fill it with your second project's details.
@@ -35,8 +35,8 @@ const projects = [  // This is a single project object.
     title: "Portfolio Project (This Website!)",
     description: "A responsive personal portfolio built from scratch using HTML, CSS, and vanilla JavaScript. Features a dynamic theme switcher and is populated by a JavaScript data structure.",
     imageUrl: "./images/project_4.webp", // Make sure to add this image to your 'images' folder!
-    liveUrl: "https://6a1462e32cfcdb2ba0c15997--shachi-portfolio-project.netlify.app/", // Use "#" if there's no live link yet
-    codeUrl: "https://github.com/thedragnwarrior/personal-portfolio-website" // Replace with your repo link
+    liveUrl: "https://shachi-portfolio-project.netlify.app", // Use "#" if there's no live link yet
+    codeUrl: "https://github.com/shachi-singh/personal-portfolio-website" // Replace with your repo link
   }
   // A "trailing comma" after the last object is valid in modern JavaScript
   // and is a good practice as it makes version control diffs cleaner.
