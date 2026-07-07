@@ -29,7 +29,15 @@ const projects =
     imageUrl: "./images/project_4.webp", 
     liveUrl: "https://shachi-portfolio-project.netlify.app", 
     codeUrl: "https://github.com/shachi-singh/personal-portfolio-website" 
-  }
+  },
+  {
+  title: "Grade Tracker App",
+  description: "A responsive web application for tracking academic grades and calculating GPAs. Built with HTML, CSS, and JavaScript with persistent data storage using localStorage.",
+  imageUrl: "./images/project_3.webp", // You'll need to screenshot this
+  liveUrl: "https://grade-tracker-delta.vercel.app/",
+  liveLabel: "View App",
+  codeUrl: "https://github.com/shachi-singh/grade-tracker" // Replace with your actual repo
+}
 ];
 
 
