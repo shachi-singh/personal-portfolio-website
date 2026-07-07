@@ -157,7 +157,6 @@ header nav ul li a {
   justify-content: center;
   padding: calc(var(--spacing-unit) * 2) 0;
 }
-
 #hero .container {
   text-align: center;
 }
@@ -177,6 +176,13 @@ header nav ul li a {
 #hero p:last-of-type {
   max-width: 600px;
   margin: 0 auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: calc(var(--spacing-unit) * 2);
 }
 #about {
   padding: calc(var(--spacing-unit) * 4) 0;
