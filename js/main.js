@@ -9,24 +9,26 @@ const projects =
   {
     title: "4-bit Arithmetic Logic Unit (ALU) Simulator",
     description: "Built a 4-bit ALU in Verilog capable of performing addition, subtraction, bitwise AND, OR, and XOR operations selected via a 3-bit opcode",
-    imageUrl: "./images/project_2.webp", // Make sure to add this image to your 'images' folder!
-    liveUrl: "https://github.com/shachi-singh/Arithmetic-Logic-Unit/blob/main/Waveforms.png", // Use "#" if there's no live link yet
-    codeUrl: "https://github.com/shachi-singh/Arithmetic-Logic-Unit/blob/main/alu_tb.v" // Replace with your repo link
+    imageUrl: "./images/project_2.webp", 
+    liveUrl: "https://github.com/shachi-singh/Arithmetic-Logic-Unit/blob/main/Waveforms.png", 
+    codeUrl: "https://github.com/ShachiSingh1983/Arithmetic-Logic-Unit",
+    livelabel: "View Waveform"
   },
   {
     title: "Traffic Light Controller using Finite State Machine (FSM)",
     description: "Designed a Finite State Machine (FSM)-based traffic light controller in Verilog HDL with timed state transitions for Red,Yellow, and Green signals.",
-    imageUrl: "./images/project_1.webp", // Make sure to add this image to your 'images' folder!
-    liveUrl: "https://github.com/shachi-singh/traffic-light-fsm-verilog/blob/main/Waveforms.png", // Use "#" if there's no live link yet
-    codeUrl: "https://github.com/shachi-singh/traffic-light-fsm-verilog/blob/main/traffic_light_tb.v" // Replace with your repo link
+    imageUrl: "./images/project_1.webp",
+    liveUrl: "https://github.com/shachi-singh/traffic-light-fsm-verilog/blob/main/Waveforms.png",
+    codeUrl: "https://github.com/shachi-singh/traffic-light-fsm-verilog",
+    livelabel: "View Waveform"
   },
 
   {
     title: "Portfolio Project (This Website!)",
     description: "A responsive personal portfolio built from scratch using HTML, CSS, and vanilla JavaScript. Features a dynamic theme switcher and is populated by a JavaScript data structure.",
-    imageUrl: "./images/project_4.webp", // Make sure to add this image to your 'images' folder!
-    liveUrl: "https://shachi-portfolio-project.netlify.app", // Use "#" if there's no live link yet
-    codeUrl: "https://github.com/shachi-singh/personal-portfolio-website" // Replace with your repo link
+    imageUrl: "./images/project_4.webp", 
+    liveUrl: "https://shachi-portfolio-project.netlify.app", 
+    codeUrl: "https://github.com/shachi-singh/personal-portfolio-website" 
   }
 ];
 
@@ -73,6 +75,13 @@ const renderProjects = () => {
             >
               View Code
             </a>
+
+            <a href="${project.liveUrl}" 
+            class="btn" 
+            target="_blank">
+            ${project.liveLabel || "Live Demo"}
+            </a>
+            
           </div>
         </div>
       </div>
@@ -109,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const formData = new FormData(contactForm);
       const submitButton = contactForm.querySelector('button[type="submit"]');
       formStatus.innerHTML = 'Sending...';
-      formStatus.className = 'info'; // You could add an .info style for this
+      formStatus.className = 'info';
       formStatus.style.display = 'block';
       submitButton.disabled = true;
 
