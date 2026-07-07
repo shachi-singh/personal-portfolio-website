@@ -1,77 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--
-        The <head> section contains metadata about your document.
-        This information is not displayed on the page itself but is crucial
-        for the browser, search engines, and other web services.
-    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Shachi - Web Developer</title>
-
-    <!-- Link to an external CSS file for styling the webpage
-    This tells the browser where to find the styling rules for the page.
-    It's placed in the <head> to prevent a Flash of Unstyled Content (FOUC). -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
-    <!-- Link to an external JavaScript file for adding interactivity to the webpage
-    The 'defer' attribute tells the browser to download the script alongside
-    the HTML, but wait to execute it until the HTML is fully parsed.
-    This is the modern best practice for performance and reliability -->
     <script src="js/main.js" defer></script>
 
 </head>
 <body>
-    <!--
-        The <body> section contains all the visible content of your webpage.
-        Everything you see in the browser window—text, images, buttons, etc.—
-        goes inside this tag.
-    -->
-        <!-- 
-       The <header> element.
-        This is a semantic landmark element that represents the introductory
-        content for the page. It's the perfect place for our site logo and
-        main navigation.
-    -->
+  
     <header>
-        <!--
-             The <nav> element.
-            This semantically defines a block of navigation links. It tells
-            assistive technology that this is the primary navigation section,
-            making your site more accessible.
-        -->
         <nav>
-            <!-- 
-                We're creating an unordered list (<ul>) to hold our navigation items.
-                This is the semantically correct way to structure a list of links.
-            -->
             <ul>
-                <!-- Each navigation item is a list item (<li>) -->
                 <li>
-                    <!-- The anchor tag (<a>) makes the text a clickable link. -->
-                    <!-- The href="#" is a placeholder that we will update later. -->
-                    <a href="#">Home</a>
+                    <a href="#hero">Home</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#">Projects</a>
+                    <a href="#projects">Projects</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
-
-        <!-- 
-            The Hamburger Menu Button 
-            This button will be hidden on desktops and shown on smaller screens.
-        -->
         <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
             <!-- These spans will be styled with CSS to create the three "bars" of the icon. -->
             <span class="bar"></span>
@@ -79,90 +36,31 @@
             <span class="bar"></span> 
             
         </button>
-        <!-- 
-            This is the HTML structure for our theme switcher.
-        -->
         <div class="theme-switcher">
-            <!-- 
-                The <label> provides an accessible name for the control and makes the entire
-                visual switch clickable. The 'for' attribute links it to the input's 'id'.
-            -->
             <label for="theme-toggle" class="switch-label">
-                <!-- We will visually hide the checkbox but keep it for functionality and accessibility. -->
                 <input type="checkbox" id="theme-toggle" class="switch-checkbox">
-                <!-- This span will be styled with CSS to look like the track and thumb of a slider. -->
                 <span class="slider"></span>
             </label>
         </div>
     </header>
-    <!--
-        This <section> tag creates the main "hero" area of your portfolio.
-        - The <section> element is used because this is a major, thematic part of the page.
-        - The id="hero" gives it a unique identifier. This is crucial for CSS styling
-          and for creating an anchor link so our navigation can scroll to this spot.
-     -->
     <section id="hero">
-        <!-- The content for the hero section (your name, title, etc.) will go here in the next task. -->
-         <!-- 
-            This <div> is a layout container. Its purpose is to hold the hero
-            content and constrain its width on larger screens for better readability.
-            - We use a <div> because its purpose is purely for styling/layout, not semantics.
-            - The class="container" is a reusable style hook. We'll use CSS to target
-              this class to set a max-width and center the content block.
-         -->
         <div class="container">
-            <!-- Your name, title, and introduction will go inside this container. -->
-             <!-- 
-        -->
-        
-        <!-- The <h1> is the most important heading on the page. It should be your name. -->
         <h1>Shachi Singh - thedragnwarrior</h1>
 
-        <!-- We add a class to this paragraph to style it as a distinct subtitle. -->
         <p class="hero-subtitle">Creative Web Developer & VLSI Enthusiast</p>
-
-        <!-- A brief, engaging pitch about what you do. -->
         <p>Learning never exhausts my mind</p>
         </div>
         
     </section>
-    <!--
-        This is the "About Me" section. It follows the same structure as the hero section
-        by using a <section> for the full-width background and a nested <div class="container">
-        to control the content's width and alignment.
-    -->
     <section id="about">
         <div class="container">
-            <!-- 
-                The <h2> is a level-2 heading, appropriate for a major section title.
-                Using proper heading levels (h1, h2, h3...) is essential for
-                accessibility and SEO.
-            -->
+
             <h2>About Me</h2>
-            <!-- 
-             We're adding a wrapper div, 'about-content', to hold our new
-            two-column layout. This lets us apply Flexbox to this container
-            without affecting the H2 heading above.
-        -->
         <div class="about-content">
-            <!-- First column: The Image -->
             <div class="about-image">
-                <!-- 
-                    NEW: The <img> tag for your profile picture.
-                    - The 'src' attribute points to the image file using a relative path.
-                    - The 'alt' attribute is CRUCIAL for accessibility. It describes
-                      the image for screen readers and if the image fails to load.
-                      Always make it descriptive!
-                -->
+
                 <img src="images/pfp.jpeg" alt="This is me!">
             </div>
-            
-            <!-- 
-                <p> tags are used for paragraphs of text.
-                Replace this placeholder text with your own personal introduction.
-                Talk about your passion for web development, your background,
-                and what drives you.
-            -->
             <div class="about-text">
             <p>
                 Hello! I'm Shachi, a passionate and creative web developer based in India. My journey into the world of code began with a fascination for how elegant design and powerful technology could come together to create amazing digital experiences.
@@ -175,48 +73,23 @@
 
         </div>
     </section>
-    <!-- 
-        This is the "Projects" section, where you will showcase your work.
-    -->
+
     <section id="projects">
-        <!-- 
-            We reuse the same <div class="container"> pattern to ensure that the
-            content in this section has the same width and centering as the sections
-            above it. This creates a consistent and professional layout.
-        -->
+
         <div class="container">
-            <!-- 
-                The <h2> heading maintains the document's semantic structure.
-                "Projects" is another main section of the portfolio.
-            -->
+
             <h2>My Projects</h2>
-            
-            <!-- A dedicated container for the project cards will be added here next. -->
-             <!--
-                This new <div> is a dedicated container specifically for our project cards.
-                - It's a non-semantic <div> because its purpose is purely for layout.
-                - The class "projects-container" provides a specific CSS hook. We will later
-                  target this class to apply a CSS Grid or Flexbox layout, arranging
-                  the project cards neatly into rows and columns.
-                - This element will be populated dynamically with JavaScript later on.
-            -->
-            <div class="projects-container">
+
+            <div class="projects-container"></div>
 
         </div>
     </section>
-    <!--
-        This is the "Contact" section. It follows the same structural pattern
-        for consistency.
-    -->
+
     <section id="contact">
         <div class="container">
             <h2>Contact Me</h2>
             <p>I'm always open to discussing new projects or opportunities. Feel free to reach out!</p>
             
-            <!-- 
-                The <form> element is a semantic container for all user input fields.
-                The 'action' and 'method' attributes will be configured later to make it functional.
-            -->
             <form id="contact-form" action="https://formspree.io/f/mqejdoyn" method="POST">
                 <div>
                     <label for="name">Name</label>
@@ -235,9 +108,7 @@
             </form>     
         </div>
     </section>
-    <!-- 
-        The <footer> is the final landmark element on our page.
-    -->
+
     <footer>
     <div class="container">
         <p>&copy; 2026 thedragnwarrior. All Rights Reserved.</p>
