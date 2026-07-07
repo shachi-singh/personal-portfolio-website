@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --primary-color: #FF6B81;
   --secondary-color: #6592b9;
@@ -273,7 +275,7 @@ header nav ul li a {
   border: 1px solid var(--border-color);
   box-shadow: 0 4px 8px var(--shadow-color);
   overflow: hidden;
-  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .project-image {
@@ -318,6 +320,10 @@ header nav ul li a {
   color: var(--surface-color);
   filter: none;
   cursor: pointer;
+}
+  .project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px var(--shadow-color);
 }
 }
 
@@ -412,7 +418,7 @@ html[data-theme='dark'] #form-status.error {
 #contact textarea:focus {
   outline: none;
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 3px rgba(255, 107, 129, 0.25);
 }
 
 #contact button[type="submit"] {
@@ -445,8 +451,8 @@ footer .container {
   justify-content: space-between;
   align-items: center;
   max-width: var(--container-width);
-  margin: 0 auto; /* Centers the container horizontally */
-  padding: 0 var(--spacing-unit); /* Adds padding on the sides for smaller screens */
+  margin: 0 auto; 
+  padding: 0 var(--spacing-unit); 
 }
 footer ul {
   display: flex;
